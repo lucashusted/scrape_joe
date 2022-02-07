@@ -50,7 +50,7 @@ for position in positions:
         alldates = []
         matches = list(datefinder.find_dates(description))
         for m in matches:
-            if (m.replace(tzinfo=pytz.UTC)>pd.Timestamp('2021-10-05',tzinfo=pytz.UTC)
+            if (m.replace(tzinfo=pytz.UTC)>pd.Timestamp('2021-10-20',tzinfo=pytz.UTC)
                 and m.replace(tzinfo=pytz.UTC)<pd.Timestamp('2022-03-01',tzinfo=pytz.UTC)):
                 alldates.append(m)
         if alldates:
